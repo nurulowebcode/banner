@@ -7,6 +7,9 @@ from .serializers import *
 def get_banner(request):
     banner = Banner.objects.last()
     ser = BannerSer(banner)
+    print("ozgartrldi.")
+    print("ozgartrldi.")
+    print("ozgartrldi.")
     return Response(ser.data)
 
 
